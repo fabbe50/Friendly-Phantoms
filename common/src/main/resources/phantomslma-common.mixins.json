@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.fabbe50.phantoms.phantoms.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinPhantom"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

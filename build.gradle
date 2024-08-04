@@ -1,6 +1,6 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.1-SNAPSHOT" apply false
+    id "dev.architectury.loom" version "1.6-SNAPSHOT" apply false
     id "io.github.pacifistmc.forgix" version "1.2.6"
 }
 
@@ -48,7 +48,7 @@ allprojects {
 
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
-        options.release = 17
+        options.release = 21
     }
 
     java {
@@ -60,12 +60,12 @@ forgix {
     group = "com.fabbe50.phantoms"
     mergedJarName = "${archivesBaseName}-${mod_version}.jar"
 
-    forge {
+    /*forge {
         projectName = "forge"
         jarLocation = "build/libs/${archivesBaseName}-${mod_version}.jar"
         mixin "phantomslma.mixins.json"
         mixin "phantomslma-common.mixins.json"
-    }
+    }*/
 
     fabric {
         projectName = "fabric"

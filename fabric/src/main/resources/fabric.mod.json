@@ -5,8 +5,12 @@
 
   "name": "Friendly Phantoms",
   "description": "A gamerule to stop phantoms from attacking.",
-  "authors": [],
-  "contact": {},
+  "authors": ["fabbe50"],
+  "contact": {
+    "homepage": "https://fabbe50.com/",
+    "sources": "https://github.com/fabbe50/Friendly-Phantoms",
+    "issues": "https://github.com/fabbe50/Friendly-Phantoms/issues"
+  },
 
   "license": "GNU LGPL 3.0",
   "icon": "icon.png",
@@ -14,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.fabbe50.phantoms.phantoms.fabric.Phantoms_LeaveMeAlone_Fabric"
+      "com.fabbe50.phantoms.fabric.Phantoms_LeaveMeAlone_Fabric"
     ]
   },
   "mixins": [
@@ -22,7 +26,8 @@
     "phantomslma-common.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.22",
-    "minecraft": ">=1.20.1"
+    "fabric": "*",
+    "architectury": ">=13",
+    "minecraft": ">=1.21"
   }
 }

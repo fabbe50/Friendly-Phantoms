@@ -1,4 +1,4 @@
-package com.fabbe50.phantoms.phantoms;
+package com.fabbe50.phantoms;
 
 import net.minecraft.world.level.GameRules;
 import org.apache.logging.log4j.LogManager;

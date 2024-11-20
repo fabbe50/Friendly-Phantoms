@@ -1,4 +1,4 @@
-package com.fabbe50.phantoms.phantoms;
+package com.fabbe50.phantoms;
 
 public class Phantoms_LeaveMeAlone_
 {

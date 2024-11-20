@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+#issueTrackerURL = ""
+license = "LGPLv3"
+
+[[mods]]
+modId = "phantomslma"
+version = "${version}"
+displayName = "Friendly Phantoms"
+authors = "fabbe50"
+description = '''
+Adds a gamerule to stop phantoms from bothering you while still letting them spawn.
+'''
+logoFile = "icon.png"
+
+[[mixins]]
+config = "phantomslma.mixins.json"
+[[mixins]]
+config = "phantomslma-common.mixins.json"
+
+[[dependencies.phantomslma]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.phantomslma]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.phantomslma]]
+modId = "architectury"
+type = "required"
+versionRange = "[13,)"
+ordering = "AFTER"
+side = "BOTH"
